@@ -177,9 +177,10 @@ body {
 
 .about {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     gap: 1.5rem;
+    text-align: center;
 }
 
 .about-img img {
@@ -224,6 +225,7 @@ body {
     text-align: center;
     font-size: 60px;
     padding-bottom: 70px;
+    margin-top: 60px;
 }
 
 .sub-title span {
@@ -628,7 +630,7 @@ main {
     text-align: center;
     font-size: 60px;
     padding-bottom: 70px;
-    margin-left: 980px;
+    margin-left: 1090px;
 }
 
 .titlefin span {
@@ -677,6 +679,7 @@ main {
     color: rgb(228,228,228);
     font-size: 20px;
     font-weight: 600;
+    text-align: center;
 }
 
 .contact-text p {
@@ -684,6 +687,7 @@ main {
     font-size: 20px;
     line-height: 30px;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 .contact-list  {
@@ -773,7 +777,8 @@ main {
     animation: slideTop 1s ease forwards;
     animation-delay: 2s;
     box-shadow: 0 0 5px #ff3c5f,
-        0 0 25px #ff3c5f
+        0 0 25px #ff3c5f;
+    cursor: pointer;
 }
 
 .contact-form form .send:hover {
@@ -805,9 +810,17 @@ main {
     border-radius: 0.5rem;
 }
 
+.obrigado {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
 
-
-
+#h1obg {
+    margin-bottom: 50px;
+}
 
 
 
