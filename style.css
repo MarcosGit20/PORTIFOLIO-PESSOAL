@@ -376,24 +376,6 @@ section {
     transform-origin: left;
 }
 
-
-/*section {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.container1 {
-    width: 600px;
-    height: 500px;
-    padding: 75px 90px;
-    margin-left: 120px;
-}
-
-.heading1 {
-    text-align: center;
-    text-decoration: underline;
-}*/
-
 .tag {
     margin: 5px;
 }
@@ -637,24 +619,6 @@ main {
     color: #ff3c5f;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .contact {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -745,20 +709,9 @@ main {
     position: relative;
 }
 
-.contact-form form input, form textarea {
-    border: none;
-    outline: none;
-    width: 90%;
-    padding: 18px;
-    background: #555557;
-    color: #ffffff;
-    font-size: 1rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    border-radius: 0.5rem;
-}
 
-.contact-form textarea {
+
+.contact-form  {
     resize: none;
     height: 220px;
 }
@@ -822,18 +775,92 @@ main {
     margin-bottom: 50px;
 }
 
+/*Formulario*/
 
-
-
-
-
-
-
-
-
-
-
-
+form {
+    width: 100%;
+    max-width: 45rem;
+    margin-left: 190px;
+  }
+  
+  label,
+  input,
+  textarea,
+  button {
+    display: block;
+  }
+  
+  input,
+  textarea,
+  button {
+    width: 100%;
+    font: inherit;
+    padding: 1.25rem;
+    font-weight: 700;
+  }
+  
+  input,
+  textarea {
+    margin-bottom: 1rem;
+    color: white;
+    background: #323644;
+    border: 0.125rem solid transparent;
+    border-radius: 1.125rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  input:hover,
+  input:focus,
+  textarea:hover,
+  textarea:focus {
+    outline: none;
+    border-color: #ff3c5f;
+    box-shadow: 0 0 0 0.3125rem #69323c;
+  }
+  
+  label {
+    margin-bottom: 0.5rem;
+    color: #84868f;
+  }
+  
+  textarea {
+    min-height: 12.5rem;
+    resize: vertical;
+    
+  }
+  
+  button {
+    border: none;
+    border-radius: 99px;
+    color: white;
+    background: #ff3c5f;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover,
+  button:focus {
+    outline: none;
+    background: #de2b4c;
+  }
+  
+  button:disabled {
+    cursor: not-allowed;
+    background: #84868f;
+  }
+  
+  .success,
+  .error {
+    text-align: center;
+  }
+  
+  .success {
+    color: greenyellow;
+  }
+  
+  .error {
+    color: tomato;
+  }
 
 @keyframes autoRun {
     from {
